@@ -30,6 +30,19 @@
         color: cornsilk;
         font-size: 60px;
     }
+    
+    @media screen and (min-width: 601px) {
+  div.example {
+    font-size: 15px;
+  }
+}
+
+/* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
+@media screen and (max-width: 600px) {
+  div.example {
+    font-size: 1.75vh;
+  }
+}
 
 
     .button {
@@ -49,7 +62,9 @@
 <body id="kk" style="background-image: url(https://cdn.hipwallpaper.com/i/55/64/VPq1G6.jpg);">
     <div class="main">
         <h1>Parkour</h1>
-        <h3 style="font-size: 8vw;">Create Diet And Workout Plans Effortlessly</h3>
+        <div class="example">
+        <h3>Create Diet And Workout Plans Effortlessly</h3>
+        </div>    
         <a class="button" href="signin.html">Sign in</a>
     </div>
 </body>
