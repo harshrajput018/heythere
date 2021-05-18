@@ -38,6 +38,33 @@
             border-style: solid;
             font-family:cursive;
         }
+        .button{
+            margin-top: 10px;
+        }
+        .btn{
+            margin-left: 6px;
+            border-style: solid;
+            border-radius: 5px;
+            padding: 5px;
+            text-decoration: none;
+            background-color: green;
+            color: honeydew;
+        }
+        .item
+        {
+            margin-top: 5px;
+        }
+        .form{
+            background-color: rgb(125, 149, 228);
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        input{
+            border-radius: 15px;
+            border-color: blanchedalmond;
+        }
     }
 </style>
 <body>
@@ -47,6 +74,19 @@
         <div class="item"><nav>Contact</nav></div>
         <div class="item"><nav>Career</nav></div>
         <div class="item" id="signin"><nav><a href ="{{ url_for('index') }}">Question 1</a></nav></div>
+    </div>
+    <div class="form">
+        <form action="">
+            <div class="item">
+                <input type="text" name="username" placeholder="username">
+            </div>
+            <div class="item">
+                <input type="password" name="password" placeholder="password">
+            </div>
+            <div class="button">
+                <a href="" class="btn">Login</a>
+            </div>
+        </form>
     </div>
 </body>
 </html>
